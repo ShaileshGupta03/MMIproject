@@ -1,0 +1,551 @@
+{
+	"info": {
+		"_postman_id": "05d31d91-f4e2-4c9a-85a1-3fed97b4b2b0",
+		"name": "Dealer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CASE-B",
+			"item": [
+				{
+					"name": "get driver details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "C",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"driver",
+								"drivercontroller",
+								"getDriverDetailscreen1",
+								"D1310"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy plan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"driverId\": \"D1310\",\r\n    \"planName\": \"Swamp\",\r\n    \"subPlanName\": \"Weekly\",\r\n    \"Price\": 500,\r\n    \"swampsAllowed\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/driver/drivercontroller/buyPlan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"driver",
+								"drivercontroller",
+								"buyPlan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CASE-A",
+			"item": [
+				{
+					"name": "get driver with full deatils",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/b1/driver/drivercontroller/getDriverDetailscreen2/D1310",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"driver",
+								"drivercontroller",
+								"getDriverDetailscreen2",
+								"D1310"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SwampBattery",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"driverId\": \"D1310\",\r\n    \"giveToDriver\": [\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"battery-b\",\r\n            \"status\": 1,\r\n            \"batteryId\": \"6231\",\r\n            \"driverId\": \"D1310\"\r\n        },\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"battery-a\",\r\n            \"driverId\": \"D1310\",\r\n            \"status\": 1,\r\n            \"batteryId\": \"82231\"\r\n        }\r\n    ],\r\n    \"takeFromDriver\": [\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"BatteryA\",\r\n            \"driverId\": \"D1310\",\r\n            \"status\": 0,\r\n            \"batteryId\": \"83924\"\r\n        },\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"BatteryB\",\r\n            \"driverId\": \"D1310\",\r\n            \"status\": 0,\r\n            \"batteryId\": \"81295\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/driver/drivercontroller/swampBattery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"driver",
+								"drivercontroller",
+								"swampBattery"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CASE-C",
+			"item": [
+				{
+					"name": "get Driver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/b1/driver/drivercontroller/getDriverDetailscreen2/D1859",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"driver",
+								"drivercontroller",
+								"getDriverDetailscreen2",
+								"D1859"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SwampBattery",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"driverId\": \"D1771\",\r\n    \"giveToDriver\": [\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"battery-b\",\r\n            \"status\": 1,\r\n            \"batteryId\": \"7231\",\r\n            \"driverId\": \"D1771\"\r\n        },\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"battery-a\",\r\n            \"driverId\": \"D1771\",\r\n            \"status\": 1,\r\n            \"batteryId\": \"723\"\r\n        }\r\n    ],\r\n    \"takeFromDriver\": [\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"BatteryA\",\r\n            \"driverId\": \"D1771\",\r\n            \"status\": 0,\r\n            \"batteryId\": \"8794\"\r\n        },\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"BatteryB\",\r\n            \"driverId\": \"D1771\",\r\n            \"status\": 0,\r\n            \"batteryId\": \"8795\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/driver/drivercontroller/swampBattery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"driver",
+								"drivercontroller",
+								"swampBattery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy Addditional plan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"driverId\": \"D1859\",\r\n    \"planName\": \"Swamp\",\r\n    \"subPlanName\": \"Weekly\",\r\n    \"Price\": \"500\",\r\n    \"swampsAllowed\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/driver/drivercontroller/buyPlan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"driver",
+								"drivercontroller",
+								"buyPlan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Submit battery api",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"driverId\": \"D1310\",\r\n    \"takeFromDriver\": [\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"BatteryA\",\r\n            \"driverId\": \"D1310\",\r\n            \"status\": 0,\r\n            \"batteryId\": \"8794\"\r\n        },\r\n        {\r\n            \"voltage\": \"500 amp\",\r\n            \"name\": \"BatteryB\",\r\n            \"driverId\": \"D1310\",\r\n            \"status\": 0,\r\n            \"batteryId\": \"8795\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/driver/drivercontroller/submitBattery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"driver",
+								"drivercontroller",
+								"submitBattery"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CreatePlanAdmin",
+			"item": [
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"planID\":\"plan1013\",\r\n  \"planName\":\"Swamp\",\r\n  \"subPlanName\":\"Weekly\",\r\n  \"cashback\":100,\r\n  \"Price\":500,\r\n  \"swampsAllowed\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/plan/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"plan",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"planID\":\"plan100\",            \r\n  \"planName\":\"Swamp\",         \r\n  \"subPlanName\":\"Monthly\",         \r\n  \"Price\":1000,\r\n  \"swampsAllowed\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/plan/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"plan",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendor APIS",
+			"item": [
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{               \r\n  \"name\":\"test1\",               \r\n  \"address1\":\"test1\",           \r\n  \"address2\":\"test1\",          \r\n  \"postal_code\":\"test1\",         \r\n  \"country_code\" :\"test1\",       \r\n  \"state_code\":\"test1\",          \r\n  \"phone_number\":\"test1\",        \r\n  \"primary_contact_number\":\"test1\", \r\n  \"contact_person_number\":\"test1\",  \r\n  \"balance\" :50000,            \r\n  \"city_name\":\"test1\",           \r\n  \"purchase_code\":\"test1\",       \r\n  \"team\" :\"test1\",               \r\n  \"blocked\":true,           \r\n  \"transporter\":true,         \r\n  \"fax_number\":\"test1\",          \r\n  \"email\":\"test1\",              \r\n  \"ic_partner_code\":\"test1\",     \r\n  \"pay_to\":\"test1\",              \r\n  \"vat_reg_number\":\"test1\",      \r\n  \"gln\":\"test1\",                 \r\n  \"tax_liable\":true,          \r\n  \"gen_bus_posting_grp\":\"test1\",  \r\n  \"vat_bus_posting_grp\":\"test1\", \r\n  \"excise_bus_posting_grp\":\"test1\",  \r\n  \"vendor_bus_posting_grp\":\"test1\",  \r\n  \"invoice_desc_code\":\"test1\",  \r\n  \"prices_include_vat\":true,    \r\n  \"prepayament\":\"test1\",          \r\n  \"location_code\":\"test1\",       \r\n  \"shipment_method_code\":\"test1\",  \r\n  \"lead_time_calculation\":\"test1\",  \r\n  \"base_calender_code\":\"test1\",     \r\n  \"customized_calender\":\"test1\",    \r\n  \"currency_code\":\"test1\",       \r\n  \"language_code\":\"test1\",       \r\n  \"tax_lst_no\":\"test1\",               \r\n  \"tax_cst_no\":\"test1\",               \r\n  \"exc_ecc_no\":\"test1\",               \r\n  \"exc_range\":\"test1\",                \r\n  \"exc_collectorate\":\"test1\",         \r\n  \"exc_vendor_type\":\"test1\",          \r\n  \"vat_tin_no\":\"test1\",             \r\n  \"vat_composition\":\"test1\",           \r\n  \"it_pan_number\":\"test1\",             \r\n  \"it_pan_status\":true,             \r\n  \"it_pan_reference_no\":\"test1\",       \r\n  \"service_tx_entiity_type\":\"test1\",    \r\n  \"service_tx_reg_no\":\"test1\",           \r\n  \"subcontractor\":\"test1\",               \r\n  \"vendor_location\":\"test1\",                     \r\n  \"commissioner_permission_no\":\"test1\",   \r\n  \"gst_reg_no\":\"test1\",        \r\n  \"gst_vendor_type\":\"test1\",    \r\n  \"gst_associate_enterprise\":true,     \r\n  \"gst_aggregate_turn_over\":\"test1\",        \r\n  \"gst_arn_no\":\"test1\"      \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/vendor/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"vendor",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update 01",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{                        \r\n  \"fax_number\":\"test1\",          \r\n  \"email\":\"test1\",              \r\n  \"ic_partner_code\":\"test1\",     \r\n  \"pay_to\":\"test1\",              \r\n  \"vat_reg_number\":\"test1\",      \r\n  \"gln\":\"test1\",                 \r\n  \"tax_liable\":true,          \r\n  \"gen_bus_posting_grp\":\"test1\",  \r\n  \"vat_bus_posting_grp\":\"test1\", \r\n  \"excise_bus_posting_grp\":\"test1\",  \r\n  \"vendor_bus_posting_grp\":\"test1\",  \r\n  \"invoice_desc_code\":\"test1\",  \r\n  \"prices_include_vat\":true,    \r\n  \"prepayament\":\"test1\",          \r\n  \"location_code\":\"test1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/vendor/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"vendor",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update 02",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{               \r\n  \"shipment_method_code\":\"test1\",  \r\n  \"lead_time_calculation\":\"test1\",  \r\n  \"base_calender_code\":\"test1\",     \r\n  \"customized_calender\":\"test1\",    \r\n  \"currency_code\":\"test1\",       \r\n  \"language_code\":\"test1\",       \r\n  \"tax_lst_no\":\"test1\",               \r\n  \"tax_cst_no\":\"test1\",               \r\n  \"exc_ecc_no\":\"test1\",               \r\n  \"exc_range\":\"test1\",                \r\n  \"exc_collectorate\":\"test1\",         \r\n  \"exc_vendor_type\":\"test1\",          \r\n  \"vat_tin_no\":\"test1\",             \r\n  \"vat_composition\":\"test1\",           \r\n  \"it_pan_number\":\"test1\",             \r\n  \"it_pan_status\":true,             \r\n  \"it_pan_reference_no\":\"test1\",       \r\n  \"service_tx_entiity_type\":\"test1\",    \r\n  \"service_tx_reg_no\":\"test1\",           \r\n  \"subcontractor\":\"test1\",               \r\n  \"vendor_location\":\"test1\",                     \r\n  \"commissioner_permission_no\":\"test1\",   \r\n  \"gst_reg_no\":\"test1\",        \r\n  \"gst_vendor_type\":\"test1\",    \r\n  \"gst_associate_enterprise\":true,     \r\n  \"gst_aggregate_turn_over\":\"test1\",        \r\n  \"gst_arn_no\":\"test1\"         \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/vendor/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"vendor",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"planID\":\"plan100\",            \r\n  \"planName\":\"Swamp\",         \r\n  \"subPlanName\":\"Monthly\",         \r\n  \"Price\":1000,\r\n  \"swampsAllowed\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/vendor/get?name=desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"vendor",
+								"get"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get vendor pagination",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"planID\":\"plan100\",            \r\n  \"planName\":\"Swamp\",         \r\n  \"subPlanName\":\"Monthly\",         \r\n  \"Price\":1000,\r\n  \"swampsAllowed\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/vendor/get?name=desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"vendor",
+								"get"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get vendor sorting",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"planID\":\"plan100\",            \r\n  \"planName\":\"Swamp\",         \r\n  \"subPlanName\":\"Monthly\",         \r\n  \"Price\":1000,\r\n  \"swampsAllowed\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/b1/vendor/get?fieldName=name&sortDir=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"b1",
+								"vendor",
+								"get"
+							],
+							"query": [
+								{
+									"key": "fieldName",
+									"value": "name"
+								},
+								{
+									"key": "sortDir",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,9 @@
+dealer_id,vendor_name,in_out,transaction_date
+D104,Chargeup,IN,05-09-2022
+D107,Chargeup,OUT,08-09-2022
+D108,Chargeup,IN,10-09-2022
+D109,Chargeup,IN,11-09-2022
+D110,Chargeup,IN,12-09-2022
+D111,Chargeup,IN,13-09-2022
+D112,Chargeup,IN,14-09-2022
+D222,Chargeup,IN,15-09-2022
